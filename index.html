@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Shooting Game</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <video id="input-video" style="display: none;"></video>
+      <canvas id="output-canvas"></canvas>
+      
+      <div id="ui-layer">
+        <div id="header">
+          <div id="score-board">Score: <span id="score">0</span></div>
+          <div id="time-container">
+            <div id="time-bar"></div>
+          </div>
+        </div>
+        
+        <div id="start-screen">
+          <h1>Summer Festival Shooting</h1>
+          <p>Show your hand to aim.</p>
+          <p>Pinch (Index + Thumb) to Shoot!</p>
+          <button id="start-btn">Start Game</button>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h1>Game Over</h1>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+        
+        <!-- Crosshair that follows the finger -->
+        <div id="crosshair"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
